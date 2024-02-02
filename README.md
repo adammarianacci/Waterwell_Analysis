@@ -14,7 +14,7 @@ Tanzania Ministry of Water dataset:
 
 # Data Preperation
 
-In this section I checked for missing values and removed columns that I would not be needing for my analysis. I set up my 'y' value as a binary class, replacing "functional needs repair" as "needs repair. I converted the contrustion year of a well into the age of a well so that they data would be easier to work with. I one hot encoded all the categorical data I wanted to use. I set up a train, test, split on my dataframe to prepare for modeling to get results for training and testing data on my features. I scaled certain features of my data so they could be represented appropriately for visualization. I also graphed some relationships between certain features against the target variable "Needs Repair".
+In this section I checked for missing values and removed columns that I would not be needing for my analysis. I set up my 'y' value as a binary class, replacing "functional needs repair" as "needs repair. I converted the contruction year of a well into the age of a well so that they data would be easier to work with. I one hot encoded all the categorical data I wanted to use. I set up a train, test, split on my dataframe to prepare for modeling to get results for training and testing data on my features. I scaled certain features of my data so they could be represented appropriately for visualization. I also graphed some relationships between certain features against the target variable "Needs Repair".
 
 ![histogramwellstoage](images/histogramwellstoage.png)
 
@@ -31,6 +31,8 @@ The 'rf2' which was the 2nd Random Forest Model with hyperparameters was our bes
 ## Evaluation 
 
 My best performing model was my rf2 model which was the second Random Forest model with hyperparameters. It showed a 76% on the macro avg. (where all classes equally contribute to the final averaged metric) of recall. Although this isn't great, it does help in identifying wells that are in need of repair. I focused on recall because it explains how many of the actual positive cases we were able to predict correctly. The confusion matrix showed that the model was falsely identifying wells 13% of the time on a sample size that was 20% of our total data. When it came to the problem of  the business understanding it was more of a concern to identify false negatives , labeling wells as not needing repair that are actually in need of repair will lead to people not having access to clean water. It showed age and gps_height as the 2 most important features with "age" as the most important feature which was different from the other models that showed gps_height as the feature of most importance. 
+
+![confusionmatrix](images/confusionmatrix.png)
 
 ## Recommendations
 
