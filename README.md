@@ -23,7 +23,7 @@ In this section I checked for missing values and removed columns that I would no
 4 models were built during this section.
 
 - baseline logistic regression model
-- single deicsion tree, 
+- single deicsion tree
 - random forest classier
 - 2nd random forest classifier with hyperparameters
 
