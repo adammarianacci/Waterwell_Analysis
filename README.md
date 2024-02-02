@@ -20,7 +20,17 @@ In this section I checked for missing values and removed columns that I would no
 
 # Modeling 
 
-4 models were built during this section, a baseline logistic regression model, a single deicsion tree, and 2 Random Forest Models. We got to see how well the models were performing and improved them using some hyperparameters. We also learned about the feature importances of the model and how they ranked amongst each other. Results will be explained in the evaluation section.
+4 models were built during this section.
+
+- baseline logistic regression model
+- single deicsion tree, 
+- random forest classier
+- 2nd random forest classifier with hyperparameters
+
+We got to see how well the models were performing and improved on them. We also learned about the feature importances of the models and how they ranked amongst each other. Results will be explained in the evaluation section.
+
+![featureimportances](images/featureimportances.png)
+
 
 # Conclusions
 
@@ -36,7 +46,11 @@ My best performing model was my rf2 model which was the second Random Forest mod
 
 ## Recommendations
 
-I recommend that there should be an age threshold on waterwells that require repair/replacement of every well by the age of 20. My analysis indicates that roughly 50% of wells are in need of repairs by the age of 30. If we send repair specialists to wells starting at the age of 20 we can tackle problems before they become larger issues potenitally leaving people without clean drinking water. I also recommend we gather more data regarding population around the well. Anything mechanical undergoes 'wear and tear' the more it is used. Gathering more information on the population around the wells will show what kind of impact this has on the ratio of wells needing repair. This may also help us understand the relationship of the ratio of wells needing repairs at each altitude, since the reasons were inconclusive. Lastly I recommend gathering more data on geographic location to see what wells were not functioning because of mechanical issues and which wells were not functioning due to a lack of water supply, looking at areas susceptile to droughts would be one example of how further data would be useful to locate problem wells due to geographic location.
+There should be an age threshold on waterwells that require repair/replacement of every well by the age of 20. 
+
+Gather more data regarding population around the well.
+
+Gather more geographic data to see if wells were not functioning beause of mechanical of geographic issues (lack of water, droughts etc).
 
 ## Limitations
 
