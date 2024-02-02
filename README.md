@@ -24,7 +24,7 @@ In this section I checked for missing values and removed columns that I would no
 
 - baseline logistic regression model
 - single deicsion tree
-- random forest classier
+- random forest classifier
 - 2nd random forest classifier with hyperparameters
 
 We got to see how well the models were performing and improved on them. We also learned about the feature importances of the models and how they ranked amongst each other. Results will be explained in the evaluation section.
